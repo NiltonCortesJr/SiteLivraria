@@ -1,0 +1,38 @@
+{
+  "name": "livrariaapi",
+  "version": "1.0.0",
+  "description": "Iniciando o Projeto Final de Módulo 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiltonCortesJr/LivrariaAPI.git"
+  },
+  "keywords": [
+    "Projeto final de módulo 4",
+    "Resilia Educação"
+  ],
+  "author": "NiltonCortesJr",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/NiltonCortesJr/LivrariaAPI/issues"
+  },
+  "homepage": "https://github.com/NiltonCortesJr/LivrariaAPI#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "path": "^0.12.7",
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.6"
+  },
+  "devDependencies": {
+    "jest": "^28.0.3",
+    "nodemon": "^2.0.16"
+  }
+}
