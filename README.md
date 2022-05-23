@@ -32,7 +32,7 @@ Ao rodar o comando, a mensagem abaixo deverá aparecer:
 
 :man_technologist: [Vitor Luiz da Silva Del Duca](https://www.linkedin.com/in/vitor-del-duca-gestao-programacao-treinamento/)
 
-:man_technologist: [Nilton Cortes Junior](https://www.linkedin.com/in/niltoncjr/)
+:man_technologist: [Nilton Côrtes Júnior](https://www.linkedin.com/in/niltoncjr/)
 
 :man_technologist: [Guilherme Santiago](https://www.linkedin.com/in/guilherme-santiago-de-oliveira-04153a238/)
   
