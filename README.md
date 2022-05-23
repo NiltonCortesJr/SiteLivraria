@@ -22,8 +22,6 @@ Para iniciar a aplicação, é necessário rodar no terminal o seguinte comando:
 ```
 npm start
 ```
-Ao rodar o comando, a mensagem abaixo deverá aparecer:
-
 
 ## Autoria
 :woman_technologist: [Izadora Ferreira dos Santos](https://www.linkedin.com/in/izadora-ferreira-dos-santos-0504b2177/)
