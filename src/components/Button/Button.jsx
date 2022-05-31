@@ -1,8 +1,8 @@
 import React from 'react';
-import  './style.css';
+import  './Button.css';
 
 
-export default function index() {
+export default function Button() {
   return (
     <div>index</div>
   )

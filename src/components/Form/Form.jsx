@@ -1,8 +1,8 @@
 import React from 'react';
-import  './style.css';
+import  './Form.css';
 
 
-export default function index() {
+export default function Form() {
   return (
     <div>index</div>
   )
