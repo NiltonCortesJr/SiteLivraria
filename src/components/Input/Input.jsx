@@ -1,8 +1,8 @@
 import React from 'react';
-import  './style.css';
+import  './Input.css';
 
 
-export default function index() {
+export default function Input() {
   return (
     <div>index</div>
   )

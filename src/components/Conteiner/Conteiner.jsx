@@ -1,8 +1,8 @@
 import React from 'react';
-import  './style.css';
+import  './Conteiner.css';
 
 
-export default function index() {
+export default function Conteiner() {
   return (
     <div>index</div>
   )

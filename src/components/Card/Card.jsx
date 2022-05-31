@@ -1,8 +1,8 @@
 import React from 'react';
-import  './style.css';
+import  './Card.css';
 
 
-export default function index() {
+export default function Card() {
   return (
     <div>index</div>
   )
