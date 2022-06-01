@@ -37,6 +37,9 @@ export default function Footer() {
         <div className={Styles.footerDisplay}>
           <div></div>
         </div>
+        <div className={Styles.footerDisplay}>
+          <div></div>
+        </div>
       </div>
       <div className={Styles.footerCopyright}>Direitos Reservados©</div>
     </div>
