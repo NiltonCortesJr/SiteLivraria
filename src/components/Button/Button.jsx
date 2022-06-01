@@ -4,6 +4,10 @@ import  './Button.css';
 
 export default function Button() {
   return (
-    <div>index</div>
+  <>
+    <button className="button">Clique Aqui</button>
+
+     
+  </>
   )
 }
