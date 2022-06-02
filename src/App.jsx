@@ -1,7 +1,9 @@
 import './App.css'
-import Card from './components/Cards/Cards'
-import Form from './components/Form/Form'
+import Cards from './components/Cards/Cards'
+// import Form from './components/Form/Form'
+import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+
 
 
 function App() {
@@ -9,8 +11,8 @@ function App() {
 
   return (
     <div className="App">
-
-      <Card />      
+      <Header />
+      <Cards />      
       {/* <Form /> */}
       <Footer/>
     </div>

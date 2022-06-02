@@ -5,7 +5,7 @@
 
 .card {
     width: 300px;
-    height: 600px;
+    height: 460px;
     margin: 25px;
     background-color: whitesmoke;
     border-radius: 20px;
@@ -15,8 +15,7 @@
 
 .card-header {
     width: 100%;
-    height: 100px;
-    overflow: hidden;
+    height: 220px;
 }
 
 .card-img {
@@ -25,46 +24,44 @@
     height: 100%;
     margin-top: 20px;
     margin-left: 75px;
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
 }
 
 .card-body {
-    height: 250px;
-    padding-left:15px;
+    height: 200px;
+    padding:15px;
     text-align: left;
     font-family: sans-serif;
 }
 .card-titulo {
-    font-size: 40px;
-    margin:15px 15px 10px 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 30px 10px 10px 10px;
     text-align: left;
 }
 .card-autora {
-    font-size: 30px;
-    margin:15px 15px 10px 15px;
+    font-size: 12px;
+    margin:10px 15px 10px 10px;
     text-align: left;
 }
-.card-preco {
-    font-size: 35px;
-    margin:15px 15px 10px 15px;
+.card-valor {
+    font-size: 20px;
+    font-weight: bolder;
+    margin:30px 10px 10px 10px;
     text-align: left;
 }
 
 .card-footer {
-    display: flex;
-    justify-content: center;
-    border-radius: 8px;
-    height: auto;
-    width: 20rem;
-    font-size: 30px;
+    margin-top: 30px;
     text-align: center;
-    background-color: black;
-    margin: 50px 25px 0 30px;
+    background-color: #005790;
+    border-radius: 10px;
 }
 .card-footer:hover{
-transition: 0,8s;
-background-color: #1b8ac8;
+    transition: 0,8s;
+    background-color: #1b8ac8;
 }
 .card-footer a {
     align-items: center;
@@ -74,7 +71,7 @@ background-color: #1b8ac8;
     padding: 15px;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 20px;    
 }
 
 
