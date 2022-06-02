@@ -1,9 +1,9 @@
 import './App.css'
-import Cards from './components/Cards/Cards'
-// import Form from './components/Form/Form'
 import Header from './components/Header/Header'
+import Cards from './components/Cards/Cards'
 import Footer from './components/Footer/Footer'
 
+import FormEditar from './components/FormEditar/FormEditar'
 
 
 function App() {
@@ -12,9 +12,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Cards />      
-      {/* <Form /> */}
+      {/* <Cards />     */}
+      <FormEditar />
       <Footer/>
+
     </div>
   )
 }
