@@ -5,7 +5,7 @@ import  './CardModelo.css';
 export default function Card(props) {
   return (
     
-        <div className="card card-1">
+        <div className="card">
             <div className="card-header">
                 <img src= {props.url} className='card-img' />
             </div>
@@ -13,9 +13,7 @@ export default function Card(props) {
                 <p className="card-titulo">{props.titulo}</p>
                 <p className="card-autora">{props.autora}</p>
                 <p className="card-valor">R$ {props.valor}</p>
-                <div className="card-footer">
-                    <a href="a">Saiba Mais</a>
-                </div>
+                <button className='card-button' typeof='submit'>Saiba Mais</button>
             </div>
         </div>
    
