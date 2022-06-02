@@ -1,0 +1,15 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin-right: 1vw;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
