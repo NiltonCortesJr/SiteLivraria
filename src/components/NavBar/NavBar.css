@@ -3,11 +3,15 @@
     justify-content: space-between;
     width: 120px;
     margin-right: 1vw;
+    font-family: Arial;
 }
 .link {
     color: white;
     text-decoration: none;
+    transition: transform 350ms ease;
 }
 .link:hover {
-    text-decoration: underline;
+    transform:scale(1.12);
+    transition: transform 350ms ease;
+    color: rgb(236, 233, 233);;
 }
