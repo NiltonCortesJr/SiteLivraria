@@ -1,13 +1,10 @@
-import React from 'react';
-import  './Button.css';
-
+import React from "react";
+import "./Button.css";
 
 export default function Button() {
   return (
-  <>
-    <button className="button">Clique Aqui</button>
-
-     
-  </>
-  )
+    <>
+      <button className="button">Clique Aqui</button>
+    </>
+  );
 }

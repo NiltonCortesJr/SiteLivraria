@@ -12,11 +12,10 @@ export default function Footer() {
             </a>
           </div>
         </div>
-
         <div className={Styles.footerDisplay}>
           <div className={Styles.footerTitle}>Sobre a Livraria</div>
           <div className={Styles.footerText}>
-            Projeto de Livraria usando React
+            Projeto de Livraria API
           </div>
           <div className={Styles.footerText}>Projeto final do módolo 5 </div>
         </div>
@@ -24,10 +23,9 @@ export default function Footer() {
           <div className={Styles.footerTitle}>Sobre Nós</div>
           <div className={Styles.footerText}>
             <a href="#" className={Styles.footerLink}>
-              Conheça a Equipe de Desenvolvimento da Livraria
+              Conheça a Equipe
             </a>
           </div>
-
           <div className={Styles.footerText}>
             <a href="https://www.resilia.com.br/" className={Styles.footerLink}>
               Conheça a Resilia
@@ -41,7 +39,7 @@ export default function Footer() {
           <div></div>
         </div>
       </div>
-      <div className={Styles.footerCopyright}>Direitos Reservados©</div>
+      <div className={Styles.footerCopyright}>Todos os direitos reservados ©</div>
     </div>
   );
 }
