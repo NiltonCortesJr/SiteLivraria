@@ -14,10 +14,8 @@ export default function Footer() {
         </div>
         <div className={Styles.footerDisplay}>
           <div className={Styles.footerTitle}>Sobre a Livraria</div>
-          <div className={Styles.footerText}>
-            Projeto de Livraria API
-          </div>
-          <div className={Styles.footerText}>Projeto final do módolo 5 </div>
+          <div className={Styles.footerText}>Projeto final do módulo 5 </div>
+          <div className={Styles.footerText}>Projeto final do módulo 4 </div>
         </div>
         <div className={Styles.footerDisplay}>
           <div className={Styles.footerTitle}>Sobre Nós</div>
@@ -31,12 +29,6 @@ export default function Footer() {
               Conheça a Resilia
             </a>
           </div>
-        </div>
-        <div className={Styles.footerDisplay}>
-          <div></div>
-        </div>
-        <div className={Styles.footerDisplay}>
-          <div></div>
         </div>
       </div>
       <div className={Styles.footerCopyright}>Todos os direitos reservados ©</div>
