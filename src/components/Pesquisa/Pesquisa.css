@@ -7,7 +7,7 @@
 }
 .Pesquisa__input {
     border: none;
-    background-color: #249bda;
+    background-color: white;
     height: 25px;
     width: 100vw;
     flex: 1;
@@ -16,23 +16,24 @@
     font-size: 15px;
 }
 .Pesquisa__input:focus {
-    background-color: white;
+    background-color: rgb(236, 233, 233);
+    outline: none;
 }
 .Buscar {
     /* padding: 0.3% 2% 0.3% 2% ; */
     height: 25px;
     width: 30px;
-    background-color: #249bda;
+    background-color: white;
     border-radius: 0 5px 5px 0;
 }
 .Buscar:hover {
     cursor: pointer;
 }
 #lupa{
-    height: 20px;
-    width: 20px;
-    margin: 3px 1px 0 0;
+    height: 19px;
+    width: 19px;
+    margin: 3px 0 0 5px;
 }
 ::placeholder {
-    color: rgb(0,0,0);
+    color: rgb(106, 101, 101);
 }
