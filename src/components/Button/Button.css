@@ -1,0 +1,16 @@
+button {
+  border-radius: 7px;
+  height: 2.5em;
+  width: 9rem;
+  text-align: center;
+  background-color: #005790;
+  margin: 20px 10px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+}
+button:hover {
+  transition: 0.3s;
+  background-color: #1b8ac8;
+}

@@ -1,9 +1,6 @@
-import React from 'react';
-import  './Input.css';
-
+import React from "react";
+import "./Input.css";
 
 export default function Input() {
-  return (
-    <div>index</div>
-  )
+  return <div>index</div>;
 }
