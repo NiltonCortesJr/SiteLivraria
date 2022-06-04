@@ -7,10 +7,13 @@ button {
   margin: 20px 10px;
   border: none;
   color: white;
-  font-size: 15px;
+  font-weight: bolder;
+  font-size: 16px;
   font-family: Arial;
 }
 button:hover {
   transition: 0.3s;
   background-color: #1b8ac8;
+  transform:scale(1.1);
+  transition: transform 350ms ease;
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Button.css";
 
-export default function Button() {
+export default function Button(props) {
   return (
     <>
-      <button className="button">Clique Aqui</button>
+      <button className="button" style={{backgroundColor: props.color}} >{props.text}</button>
     </>
   );
 }

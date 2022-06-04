@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 export default function CardModelo() {
   return (
-    <div className="card card-1">
+    <div className="card">
         <div className="card-header">
             <img src= "https://m.media-amazon.com/images/P/B01NASOQGG.01._SCLZZZZZZZ_SX500_.jpg" className='card-img' />
         </div>
@@ -15,7 +15,7 @@ export default function CardModelo() {
             <p className="card-valor">R$ 10,00</p>
             <div className="card-footer">
                 {/* <a href="a">Saiba Mais</a> */}
-                <Button />
+                <Button text="Saiba mais"/>
             </div>
         </div>
     </div>
