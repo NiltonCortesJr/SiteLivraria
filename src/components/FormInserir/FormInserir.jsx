@@ -53,9 +53,8 @@ export default function FormInserir() {
             ></textarea>
           </div>
           <div className="button">
-            <Button text= "Salvar"/>
-            <Button text= "Cancelar"/>
-            <Button text= "Deletar"/>
+            <Button text="Inserir" />
+            <Button text="Cancelar" color="#740719ab"/>
           </div>
         </div>
       </form>

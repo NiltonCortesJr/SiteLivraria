@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { FormsEditar, FormsInserir, Home} from './pages'
 
 
-
 function App() {
   return (
     <BrowserRouter>
