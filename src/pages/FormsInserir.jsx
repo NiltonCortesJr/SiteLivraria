@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import FormInserir from "../components/FormInserir/FormInserir";
 import Footer from "../components/Footer/Footer";
 
-export default function FormInserir() {
+export default function FormsInserir() {
   return (
     <div>
       <Header />

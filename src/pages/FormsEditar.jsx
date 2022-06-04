@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import FormEditar from "../components/FormEditar/FormEditar";
 import Footer from "../components/Footer/Footer";
 
-export default function FormEditar() {
+export default function FormsEditar() {
   return (
     <div>
       <Header />

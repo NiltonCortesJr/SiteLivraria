@@ -15,7 +15,7 @@ export default function CardModelo() {
             <p className="card-valor">R$ 10,00</p>
             <div className="card-footer">
                 {/* <a href="a">Saiba Mais</a> */}
-                <Button text="Saiba mais"/>
+                <Button text= "Saiba mais"/>
             </div>
         </div>
     </div>
