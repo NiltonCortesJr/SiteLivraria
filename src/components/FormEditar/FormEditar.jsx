@@ -42,8 +42,8 @@ export default function FormEditar() {
             ></textarea>
           </div>
           <div className="button">
-            <Button />
-            <Button />
+            <Button text= "Salvar"/>
+            <Button text= "Cancelar"/>
           </div>
         </div>
       </form>
