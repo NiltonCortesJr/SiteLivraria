@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function CardModelo(props) {
   const navigation = useNavigate();
-  console.log(navigation);
   return (
     <div className="card">
       <div className="card-header">
@@ -14,14 +13,13 @@ export default function CardModelo(props) {
       <div className="card-body">
         <p className="card-titulo">{props.titulo}</p>
         <p className="card-autora">{props.autora}</p>
-        <p className="card-valor">R$ {props.valor}0</p>
+        <p className="card-valor">R$ {props.valor.toFixed(2).replace(".",",")}</p>
         <div className="card-footer">
           <Button
             onClick={() =>
               navigation(
-                `/editar/${props.id}`,
-                { replace: true },
-                console.log("alou")
+                `/saibamais/${props.id}`,
+                { replace: true }  
               )
             }
             text="Saiba mais"
