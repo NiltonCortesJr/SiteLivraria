@@ -1,9 +1,13 @@
 import React from "react";
 import "./Card.css";
 import Button from "../Button/Button";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 export default function Card() {
   return (
+    <>
+    <Header /> 
     <main className="main">
       <form className="card">
         <img
@@ -44,5 +48,7 @@ export default function Card() {
         </div>
       </form>
     </main>
+    <Footer />
+    </>
   );
 }
