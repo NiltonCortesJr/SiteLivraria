@@ -1,15 +1,17 @@
 import React from "react";
 import Styles from "./Footer.module.css";
 import Logo_Livraria from "../../assets/LogoFooter/logo_Livraria.png";
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <div className={Styles.footer}>
       <div className={Styles.footerContainer}>
         <div className={Styles.footerDisplay}>
           <div className={Styles.footerImage}>
-            <a href="#">
+            <Link to="/">
               <img src={Logo_Livraria} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={Styles.footerDisplay}>
