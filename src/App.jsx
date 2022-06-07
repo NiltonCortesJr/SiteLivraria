@@ -6,10 +6,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/add" element={<FormsInserir />} />
-        <Route path="/editar/:id" element={<FormsEditar />} />
-        <Route path="/saibamais/:id" element={<SaibaMais />} />
+         <Route path="/home" element={<Home />} /> 
+         <Route path="/add" element={<FormsInserir />} />
+         <Route path="/editar/:id" element={<FormsEditar />} />
+         <Route path="/saibamais/:id" element={<SaibaMais />} />
       </Routes>
     </BrowserRouter>
   );

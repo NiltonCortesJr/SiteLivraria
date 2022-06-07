@@ -5,11 +5,10 @@ import Footer from '../components/Footer/Footer'
 
 
 function Home() {
-
-
   return (
     <div className="App">
-      <Header />     
+      <Header />
+      <img src="./cupom.png"></img>   
         <Cards />      
       <Footer/>
     </div>
