@@ -2,5 +2,6 @@
 import FormsEditar from "./FormsEditar"
 import FormsInserir from "./FormsInserir"
 import Home from "./Home"
+import SaibaMais from "./PageCard"
 
-export { /* Contatos, */ FormsEditar, FormsInserir, Home }
+export { /* Contatos, */ FormsEditar, FormsInserir, Home, SaibaMais }

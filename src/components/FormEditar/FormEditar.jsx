@@ -18,8 +18,7 @@ export default function FormEditar(props) {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { url, titulo, setUrl, autora, valor, descricao };
-    const livro = {id}
+    const data = { url, titulo, autora, valor, descricao };
     
     setIsPending(true);
 
@@ -118,7 +117,7 @@ export default function FormEditar(props) {
             {!loading && <Button text="Salvar" />}
             {loading && <Button disabled text="Salvando..." />}
             <Button text="Cancelar" />
-            <Button text="Deletar" color="#740719ab"/>
+            
           </div>
         </div>
       </form>
