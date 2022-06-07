@@ -1,0 +1,17 @@
+.container-selecao{
+    display: flex;
+    justify-content: center;
+}
+
+.selecao{
+    width: 85%
+}
+
+.populares{
+    display: flex;
+    margin: 1.7% 0 1.7% 7.5%;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 21px;
+    font-weight: 700;
+}
