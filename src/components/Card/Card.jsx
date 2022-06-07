@@ -3,6 +3,7 @@ import "./Card.css";
 import Button from "../Button/Button";
 import { useParams, useNavigate } from "react-router-dom";
 
+
 export default function Card() {
   const [data, setData] = useState({});
   const { id } = useParams();
@@ -21,6 +22,8 @@ export default function Card() {
   };
   
   return (
+    <>
+    <Header /> 
     <main className="main">
       <form className="card">
         <img id="image" src={data.url} className="card-img" />
@@ -61,5 +64,7 @@ export default function Card() {
         </div>
       </form>
     </main>
+    <Footer />
+    </>
   );
 }
