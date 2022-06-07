@@ -16,13 +16,6 @@ export default function CardModelo(props) {
         <p className="card-valor">R$ {props.valor.toFixed(2).replace(".",",")}</p>
         <div className="card-footer">
           <Button
-            data={{ id: props.id,
-              titulo: props.titulo,
-              autora: props.autora,
-              valor: props.valor,
-              descricao: props.descricao,
-              url: props.url }}
-              
             onClick={() =>
               navigation(
                 `/saibamais/${props.id}`,

@@ -15,31 +15,22 @@ export default function FormEditar(props) {
   const [autora, setAutora] = useState("");
   const [valor, setValor] = useState("");
   const [descricao, setDescricao] = useState("");
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = { url, titulo, autora, valor, descricao };
-    
+
     setIsPending(true);
 
-    /*  fetch("https://apilivraria.herokuapp.com/livros/editar/" + id, {
-      method: "POST",
+    fetch("https://apilivraria.herokuapp.com/livros/editar/" + id, {
+      method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     }).then(() => {
       console.log("Livro editado com sucesso!");
       setIsPending(false);
-    }); */
+    });
   };
-
-   const handleClick = () => {
-    fetch("https://apilivraria.herokuapp.com/livros/" + id, {
-      method: "DELETE",
-      body: JSON.stringify(livro)
-    }).then(() => {
-      
-    })
-  } 
 
   return (
     <main className={styles.main}>
@@ -117,7 +108,6 @@ export default function FormEditar(props) {
             {!loading && <Button text="Salvar" />}
             {loading && <Button disabled text="Salvando..." />}
             <Button text="Cancelar" />
-            
           </div>
         </div>
       </form>

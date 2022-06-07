@@ -12,9 +12,13 @@ export default function Card() {
     fetch("https://apilivraria.herokuapp.com/livros/"+id)
     .then((response) => response.json())
     .then((json) =>setData(json));
-  },[])
-  console.log(data)
- 
+  },[]);
+
+  const handleClick = () => {
+    fetch("https://apilivraria.herokuapp.com/livros/"+id, {
+      method: "DELETE"
+    }).then(() => {});
+  };
   
   return (
     <main className="main">
@@ -51,7 +55,7 @@ export default function Card() {
                 navigation(`/editar/${data.id}`, { replace: true })
               }
             />
-            <Button text="Deletar" color="#740719ab" />
+            <Button onClick={handleClick}text="Deletar" color="#740719ab" />
             <Button text="Voltar" />
           </div>
         </div>
