@@ -18,10 +18,10 @@ export default function Cards() {
         autora={livro.autor}
         valor={livro.valor}
         id={livro.id}
+        descricao={livro.descricao}
         
         />
         ))}
-        console.log(autor)
     </div>
   );
 }

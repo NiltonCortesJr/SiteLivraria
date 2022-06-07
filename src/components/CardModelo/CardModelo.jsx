@@ -18,7 +18,7 @@ export default function CardModelo(props) {
           <Button
             onClick={() =>
               navigation(
-                `/editar/${props.id}`,
+                `/saibamais/${props.id}`,
                 { replace: true }  
               )
             }
