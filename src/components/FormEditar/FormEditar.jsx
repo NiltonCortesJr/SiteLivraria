@@ -37,7 +37,7 @@ export default function FormEditar(props) {
       <form className={styles.card}>
         <img id={styles.image} src="" />
         <div className={styles.cardCampos}>
-          <h2>Edite o livro:</h2>
+          <h2>Editar livro</h2>
           <div className={styles.alteraImagem}>
             <label className={styles.label} for="imagem">
               Url da Imagem:{" "}
