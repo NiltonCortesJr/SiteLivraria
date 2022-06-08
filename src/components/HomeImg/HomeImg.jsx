@@ -1,10 +1,10 @@
 import React from "react";
-import "./HomeImg.css"
+import style from "./HomeImg.module.css"
 
 export default function HomeImg () {
     return (
-        <div className="container-selecao">
-            <img src="../src/selecao.jpg" alt="seleção especial, cupom 10%OFF LIBER10" className="selecao"/>
+        <div className={style.containerSelecao}>
+            <img src="../src/selecao.jpg" alt="seleção especial, cupom 10%OFF LIBER10" className={style.selecao}/>
         </div>
     )
 }

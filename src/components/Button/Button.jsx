@@ -1,11 +1,11 @@
 import React from "react";
-import "./Button.css";
+import style from "./Button.module.css";
 
 export default function Button(props) {
   const { text, color, ...rest } = props;
   return (
     <>
-      <button className="button" style={{ backgroundColor: color }} {...rest}>
+      <button className={style.button} style={{ backgroundColor: color }} {...rest}>
         {text}
       </button>
     </>

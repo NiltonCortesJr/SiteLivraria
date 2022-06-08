@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import "./Card.css";
+import style from "./Card.module.css";
 import Button from "../Button/Button";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -23,48 +23,50 @@ export default function Card() {
   
   return (
     <>
-    <Header /> 
-    <main className="main">
-      <form className="card">
-        <img id="image" src={data.url} className="card-img" />
-        <div className="card-campos">
+    <main className={style.main}>
+      <form className={style.card}>
+        <img id={style.image} src={data.url} className={style.cardImg} />
+        <div className={style.cardCampos}>
           <h1>{data.titulo} </h1>
 
-          <div className="Autora">
+          <div className={style.Autora}>
             <h2>Autor(a):</h2>
-            <label className="label" for="autora">
+            <label className={style.label} for="autora">
               {data.autor}
             </label>
           </div>
 
-          <div className="Preco">
+          <div className={style.Preco}>
             <h2>Preço:</h2>
-            <label className="label" for="preco">
+            <label className={style.label} for="preco">
               {data.valor}
             </label>
           </div>
 
-          <div className="Descricao">
+          <div className={style.Descricao}>
             <h2> Descrição:</h2>
-            <label className="label" for="descricao">
+            <label className={style.label} for="descricao">
               {data.descricao}
             </label>
           </div>
 
-          <div className="button">
+          <div className={style.button}>
             <Button
               text="Editar"
               onClick={() =>
                 navigation(`/editar/${data.id}`, { replace: true })
               }
             />
-            <Button onClick={handleClick}text="Deletar" color="#740719ab" />
-            <Button text="Voltar" />
+            <Button 
+            text="Voltar" 
+            onClick={() =>
+              navigation(`/`, { replace: true })
+            }
+            />
           </div>
         </div>
       </form>
     </main>
-    <Footer />
     </>
   );
 }
