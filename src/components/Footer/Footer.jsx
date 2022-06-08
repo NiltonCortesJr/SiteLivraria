@@ -22,10 +22,8 @@ export default function Footer() {
         <div className={Styles.footerDisplay}>
           <div className={Styles.footerTitle}>Sobre Nós</div>
           <div className={Styles.footerText}>
-            <Link to="/contato">
-            <a  className={Styles.footerLink}>
+            <Link className={Styles.footerLink} to="/contato">
               Conheça a Equipe
-            </a>
             </Link>
           </div>
           <div className={Styles.footerText}>
@@ -35,7 +33,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className={Styles.footerCopyright}>Todos os direitos reservados ©</div>
+      <div className={Styles.footerCopyright}>
+        Todos os direitos reservados ©
+      </div>
     </div>
   );
 }
