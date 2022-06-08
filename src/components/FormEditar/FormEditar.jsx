@@ -1,41 +1,52 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FormEditar.module.css";
 import Button from "../Button/Button";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 
-export default function FormEditar(props) {
+export default function FormEditar() {
   const { id } = useParams();
+  const navigation = useNavigate();
   const { data, loading, error } = useFetch(
     `https://apilivraria.herokuapp.com/livros/${id}`
   );
-
+  useEffect(()=>{
+    fetch("https://apilivraria.herokuapp.com/livros/"+id)
+    .then((response) => response.json())
+    .then((json) =>setDadosI(json));
+  },[]);
+  
   const [url, setUrl] = useState("");
-  const [titulo, setTitulo] = useState("");
+  const [nome, setNome] = useState("");
   const [autora, setAutora] = useState("");
+  const [gênero, setGênero] = useState("");
   const [valor, setValor] = useState("");
   const [descricao, setDescricao] = useState("");
-
-  const handleSubmit = (e) => {
+  const [dadosI, setDadosI] = useState("");
+  
+    const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { url, titulo, autora, valor, descricao };
-
-    setIsPending(true);
-
-    fetch("https://apilivraria.herokuapp.com/livros/editar/" + id, {
-      method: "PATCH",
+    
+    const data = { url, nome, autora, gênero, valor, descricao };
+    
+    fetch("https://apilivraria.herokuapp.com/livros/" + id, {
+      method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
-    }).then(() => {
-      console.log("Livro editado com sucesso!");
-      setIsPending(false);
-    });
+    })
+      .then(() => {
+        console.log("Livro editado com sucesso!");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    navigation("/");
   };
 
   return (
     <main className={styles.main}>
-      <form className={styles.card}>
-        <img id={styles.image} src="" />
+      <form onSubmit={handleSubmit} className={styles.card}>
+        <img id={styles.image} src={dadosI.url} />
         <div className={styles.cardCampos}>
           <h2>Editar livro</h2>
           <div className={styles.alteraImagem}>
@@ -47,6 +58,7 @@ export default function FormEditar(props) {
               type="text"
               name="name"
               required
+              placeholder={dadosI.url}
               value={url}
               onChange={(e) => setUrl(e.target.value)}
             />
@@ -60,8 +72,9 @@ export default function FormEditar(props) {
               type="text"
               name="name"
               required
-              value={titulo}
-              onChange={(e) => setTitulo(e.target.value)}
+              placeholder={dadosI.titulo}
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
             />
           </div>
           <div className={styles.alteraAutora}>
@@ -73,10 +86,26 @@ export default function FormEditar(props) {
               type="text"
               name="name"
               required
+              placeholder={dadosI.autor}
               value={autora}
               onChange={(e) => setAutora(e.target.value)}
             />
           </div>
+          <div className={styles.alteraPreco}>
+            <label className={styles.label} for="genero">
+              Gênero:{" "}
+            </label>
+            <input
+              className={styles.inputs}
+              type="text"
+              name="name"
+              required
+              placeholder={dadosI.genero}
+              value={gênero}
+              onChange={(e) => setGênero(e.target.value)}
+            />
+          </div>
+          <div className={styles.alteraDescricao}>
           <div className={styles.alteraPreco}>
             <label className={styles.label} for="preco">
               Preço:{" "}
@@ -86,11 +115,11 @@ export default function FormEditar(props) {
               type="text"
               name="name"
               required
+              placeholder={dadosI.valor}
               value={valor}
               onChange={(e) => setValor(e.target.value)}
             />
           </div>
-          <div className={styles.alteraDescricao}>
             <label className={styles.label} for="descricao">
               Descrição:{" "}
             </label>
@@ -100,6 +129,7 @@ export default function FormEditar(props) {
               rows="2"
               cols="33"
               required
+              placeholder={dadosI.descricao}
               value={descricao}
               onChange={(e) => setDescricao(e.target.value)}
             ></textarea>

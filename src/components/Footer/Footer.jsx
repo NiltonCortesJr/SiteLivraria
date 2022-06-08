@@ -22,9 +22,11 @@ export default function Footer() {
         <div className={Styles.footerDisplay}>
           <div className={Styles.footerTitle}>Sobre Nós</div>
           <div className={Styles.footerText}>
-            <a href="#" className={Styles.footerLink}>
+            <Link to="/contato">
+            <a  className={Styles.footerLink}>
               Conheça a Equipe
             </a>
+            </Link>
           </div>
           <div className={Styles.footerText}>
             <a href="https://www.resilia.com.br/" className={Styles.footerLink}>
