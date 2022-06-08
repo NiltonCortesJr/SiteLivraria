@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./FormInserir.module.css";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 export default function FormInserir() {
   const [id, setId] = useState();
@@ -11,10 +12,11 @@ export default function FormInserir() {
   const [descricao, setDescricao] = useState("");
   const [url, setUrl] = useState("");
   const [loading, setLoading] = useState(false);
+  const navigation = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const livro = { id ,nome, autora, gênero, valor, descricao, url };
+    const livro = { id, nome, autora, gênero, valor, descricao, url };
 
     setLoading(true);
 
@@ -26,11 +28,12 @@ export default function FormInserir() {
       console.log("Livro inserido com sucesso!");
       setLoading(false);
     });
+    navigation("/");
   };
 
   return (
     <main className={styles.main}>
-      <form onSubmit={handleSubmit} className={styles.card}>
+      <form onSubmit={handleSubmit } className={styles.card}>
         {/* <img id={styles.image} src="" /> */}
         <div className={styles.cardCampos}>
           <h2>Insira um livro</h2>
