@@ -1,15 +1,16 @@
 .containerSelecao{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .selecao{
-    width: 85%
+    width: 85%;
 }
 
 .populares{
-    display: flex;
     margin: 1.7% 0 1.7% 7.5%;
+    align-self: flex-start;
     font-family: Arial;
     font-style: italic;
     font-size: 21px;

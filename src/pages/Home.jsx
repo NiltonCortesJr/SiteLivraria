@@ -9,7 +9,6 @@ function Home() {
     <div className="home">
       <Header />
       <HomeImg />
-      <p className="populares">Conheça os livros mais populares da semana</p>
       <Cards />      
       <Footer/>
 

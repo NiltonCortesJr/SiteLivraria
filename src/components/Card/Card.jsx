@@ -15,10 +15,14 @@ export default function Card() {
     .then((json) =>setData(json));
   },[]);
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
     fetch("https://apilivraria.herokuapp.com/livros/"+id, {
-      method: "DELETE"
-    }).then(() => {});
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+    })
+    navigation("/");
   };
   
   return (
@@ -62,6 +66,11 @@ export default function Card() {
             onClick={() =>
               navigation(`/`, { replace: true })
             }
+            />
+            <Button 
+            text="Deletar"
+            color ="#ff0000"
+            onClick={handleClick}
             />
           </div>
         </div>
