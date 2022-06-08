@@ -1,12 +1,12 @@
 import React from "react";
-import './Pesquisa.css'
+import style from './Pesquisa.module.css'
 
 export default function Pesquisa () {
     return (
-        <div className="Pesquisa">
-            <input type="text" class="Pesquisa__input" placeholder="Livro, gênero ou autor"/>
+        <div className={style.Pesquisa}>
+            <input type="text" className={style.PesquisaInput} placeholder="Livro, gênero ou autor"/>
             <a className="Buscar" href="https://www.youtube.com/">
-                <img id = "lupa" className = "Buscar" src="https://i.imgur.com/lbqycp1.png"  alt="pesquisaIcone"/>
+                <img id = {style.lupa} className = {style.Buscar} src="https://i.imgur.com/lbqycp1.png"  alt="pesquisaIcone"/>
             </a>
         </div>
     )

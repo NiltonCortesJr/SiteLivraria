@@ -3,14 +3,14 @@ import { Route, BrowserRouter } from "react-router-dom";
 import {Home, FormsInserir, FormsEditar, SaibaMais } from "../pages/";
 
 const Routes = () => {
-   return(
-       <BrowserRouter>
-           <Route component = { Home }  path="/" exact />
+    return(
+        <BrowserRouter>
+            <Route component = { Home }  path="/" exact />
             <Route component = { FormsEditar }  path="/formedit" />
             <Route component = { FormsInserir }  path="/forminsert" /> 
-            <Route component = { SaibaMais }  path="/saibamais" /> 
-       </BrowserRouter>
-   )
+            <Route component = { SaibaMais }  path="/saibaMais" /> 
+        </BrowserRouter>
+    )
 }
 
 export default Routes;

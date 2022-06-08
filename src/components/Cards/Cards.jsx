@@ -1,6 +1,6 @@
 import React from "react";
 import CardModelo from "../CardModelo/CardModelo";
-import "./Cards.css";
+import style from "./Cards.module.css";
 import { useFetch } from "../../hooks/useFetch";
 
 export default function Cards() {
@@ -9,7 +9,7 @@ export default function Cards() {
 
 
   return (
-    <div className="container">
+    <div className={style.container}>
       {livros.map((livro) => (
         <CardModelo
         key={livro.id}
