@@ -1,0 +1,13 @@
+.Header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 85px;
+    background-color: #005790;
+    margin-bottom: 15px;
+}
+.logo {
+    padding-left: 0.5vw;
+    height: 85%;
+    filter: brightness(100);
+}
