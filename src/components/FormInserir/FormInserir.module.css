@@ -7,33 +7,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 74.03vh;
+    height: 67.8vh;
 }
+
 .card {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 65%;
-    height: auto;
-    margin: 20px 0;
+    justify-content:center;
+    width: 28%;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);    
 }
-#image {
-    vertical-align: middle;
-    width: 250px;
-    height: 380px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
+
+h2{
+    font-family: Arial;
+    font-size: 19px;
 }
 .cardCampos{
     display: grid;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
 }
 .inputs{
-    padding-left: 5px;
     width: 100%;
     height: 25px;
     border-radius: 5px;
@@ -49,10 +44,8 @@
 }
 textarea{
     padding-left: 5px;
-    width: 100%;
+    width: 98%;
     height: auto;
-    font-size: 20px;
-    text-align: center;
     border-radius: 5px;
     text-align: left;
     font-size:15px;
@@ -62,17 +55,16 @@ textarea{
 .alteraImagem, .alteraTitulo, .alteraAutora, .alteraPreco {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .alteraDescricao{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin: 15px 0 15px 0;
+    margin: 10px 0 0;
 }
 .button{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 0 40px 0 40px; */
 }

@@ -33,7 +33,7 @@ export default function FormInserir() {
       <form onSubmit={handleSubmit} className={styles.card}>
         {/* <img id={styles.image} src="" /> */}
         <div className={styles.cardCampos}>
-          <h2>Insira o livro:</h2>
+          <h2>Insira um livro</h2>
           <div className={styles.alteraTitulo}>
             <label className={styles.label} for="id">
               Código de Barras:{" "}
