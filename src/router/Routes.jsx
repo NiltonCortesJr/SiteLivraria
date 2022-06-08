@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
-import {Home, FormsInserir, FormsEditar, SaibaMais } from "../pages/";
+import {Home, FormsInserir, FormsEditar, SaibaMais, PagesContatos } from "../pages/";
 
 const Routes = () => {
    return(
@@ -9,6 +9,7 @@ const Routes = () => {
             <Route component = { FormsEditar }  path="/formedit" />
             <Route component = { FormsInserir }  path="/forminsert" /> 
             <Route component = { SaibaMais }  path="/saibamais" /> 
+            <Route component = { PagesContatos}
        </BrowserRouter>
    )
 }

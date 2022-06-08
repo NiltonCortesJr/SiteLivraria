@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { FormsEditar, FormsInserir, Home, SaibaMais } from "./pages";
+import { FormsEditar, FormsInserir, Home, SaibaMais, PagesContatos } from "./pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
          <Route path="/add" element={<FormsInserir />} />
          <Route path="/editar/:id" element={<FormsEditar />} />
          <Route path="/saibamais/:id" element={<SaibaMais />} />
+         <Route path="/contatos" element={<PagesContatos />} />
       </Routes>
     </BrowserRouter>
   );
