@@ -8,10 +8,8 @@ function Home() {
   return (
     <div className="home">
       <Header />
-       <HomeImg />
-
-       <p className="populares">Conheça os livros mais populares da semana</p>
-        <Cards />      
+      <HomeImg />
+      <Cards />      
       <Footer/>
 
     </div>
