@@ -11,7 +11,7 @@ try {
             autora:"Colleen Hoover",
             gênero: "Romance",
             valor: 39.90,
-            descricao:"Finalista do prêmio Goodreads como melhor romance de 2019. Um casal apaixonado. Uma intrusa. Três mentes doentias. Verity Crawford é a autora best-seller por trás de uma série de sucesso. Ela está no auge de sua carreira, aclamada pela crítica e pelo público, no entanto, um súbito e terrível acidente acaba interrompendo suas atividades, deixando-a sem condições de concluir a história... E é nessa complexa circunstância que surge Lowen Ashleigh, uma escritora à beira da falência convidada a escrever, sob um pseudônimo, os três livros restantes da já consolidada série. Não conto mais, você vai ter que ler, mas cuidado!! Verity não vai derreter seu coração e fritar sua alma!",
+            descricao:"Um casal apaixonado. Uma intrusa. Três mentes doentias. Verity Crawford é a autora best-seller por trás de uma série de sucesso. Ela está no auge de sua carreira, aclamada pela crítica e pelo público, no entanto, um súbito e terrível acidente acaba interrompendo suas atividades, deixando-a sem condições de concluir a história... E é nessa complexa circunstância que surge Lowen Ashleigh, uma escritora à beira da falência convidada a escrever, sob um pseudônimo, os três livros restantes da já consolidada série. Não conto mais, você vai ter que ler, mas cuidado!! Verity não vai derreter seu coração e fritar sua alma!",
             url: "https://images-na.ssl-images-amazon.com/images/I/51ABRx3d7GL._SX335_BO1,204,203,200_.jpg"
         }
     )   
@@ -103,7 +103,7 @@ try {
     await DBMLivros.popular(
         {
             id: 09, 
-            nome:"Alice nos paises da maravilha (ediçao de bolso)", 
+            nome:"Alice nos paises da maravilha", 
             autora:"Lewis Carroll",
             genero: "Ficção",
             valor: 18.99,
@@ -115,7 +115,7 @@ try {
     await DBMLivros.popular(
         {
             id: 10, 
-            nome:"O mundo que não pensa: A humanidade diante do perigo real da extinção do homo sapiens", 
+            nome:"O mundo que não pensa", 
             autora:"Franklin Foer",
             genero: "Ficção",
             valor: 24.89,
@@ -139,7 +139,7 @@ try {
     await DBMLivros.popular(
         {
             id: 12, 
-            nome:"Dungeons & Dragons 5ªe livro do jogador", 
+            nome:"Dungeons & Dragons 5ªe livro", 
             autora:"Galápagos Jogos",
             genero: "Jogos",
             valor: 189.90,
@@ -151,7 +151,7 @@ try {
     await DBMLivros.popular(
         {
             id: 13, 
-            nome:"As coisas que você só vê quando desacelera: Como manter a calma em um mundo frenético", 
+            nome:"As coisas que você só vê quando desacelera", 
             autora:"Haemin Sunim",
             genero: "Espiritual",
             valor: 37.33,
@@ -166,7 +166,7 @@ try {
             nome:"Não fale com estranhos", 
             autora:"Harlan Coben",
             genero: "Suspense",
-            valor: 44,90,
+            valor: 44.90,
             descricao:"O estranho aparece do nada e, com poucas palavras, destrói o mundo de Adam Price. Sua identidade é desconhecida. Suas motivações são obscuras. Mas suas revelações são dolorosamente incontestáveis. Adam levava uma vida dos sonhos ao lado da esposa, Corinne, e dos dois filhos. Quando o estranho o aborda para contar um segredo estarrecedor sobre sua esposa, ele percebe a fragilidade do sonho que construiu: teria sido tudo uma grande mentira? Assombrado pela dúvida, Adam decide confrontar Corinne, e a imagem de perfeição que criou em torno dela começa a ruir. Ao investigar a história por conta própria, acaba se envolvendo num universo sombrio repleto de mentiras, chantagens e assassinatos.",
             url: "https://img.skoob.com.br/5ZBiZzonUcu5Yx4gEDZbY1nhko0=/200x/center/top/smart/filters:format(jpeg)/https://skoob.s3.amazonaws.com/livros/580699/NAO_FALE_COM_ESTRANHOS_1461607413580699SK1461607413B.jpg"
         }
@@ -175,7 +175,7 @@ try {
     await DBMLivros.popular(
         {
             id: 15, 
-            nome:"Arrume a sua cama: Pequenas coisas que podem mudar a sua vida... E talvez o mundo - 2ª Edição", 
+            nome:"Arrume a sua cama: Pequenas coisas que podem mudar a sua vida... E talvez o mundo", 
             autora:"William H. McRaven",
             genero: "Autoajuda",
             valor: 21.40,
@@ -199,7 +199,7 @@ try {
     await DBMLivros.popular(
         {
             id: 17, 
-            nome:"Os segredos de Colin Bridgerton (Os Bridgertons – Livro 4): O livro de Colin", 
+            nome:"Os segredos de Colin Bridgerton", 
             autora:"Julia Quinn",
             genero: "Romance",
             valor: 39.50,
@@ -283,7 +283,7 @@ try {
     await DBMLivros.popular(
         {
             id: 24, 
-            nome:"O pequeno príncipe - Bolso", 
+            nome:"O pequeno príncipe", 
             autora:"Antoine de Saint-Exupéry",
             genero: "Infantil",
             valor: 8.99,
@@ -362,33 +362,6 @@ try {
             url: "https://m.media-amazon.com/images/I/41P+Rbh898L.jpg"
         }
     )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 } catch (e) {
     console.log(e.message)

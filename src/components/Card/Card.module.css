@@ -52,13 +52,15 @@ h2{
 .Imagem, .Titulo, .Autora, .Preco {
     display: flex;
     flex-direction: column;
-    margin-top: 9px;
+    margin-top: 10px;
+
 }
 .Descricao{
     display: flex;
     align-items: stretch;
+    text-align: justify;
     flex-direction: column;
-    margin-top: 9px;
+    margin-top: 10px;
 }
 .button{
     display: flex;
