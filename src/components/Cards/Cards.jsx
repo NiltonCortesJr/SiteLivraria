@@ -9,12 +9,13 @@ export default function Cards() {
     data: livros,
     error,
   } = useFetch("https://apilivraria.herokuapp.com/livros");
-  if (loading)
+  if (loading){
     return (
-      <div className="animation-wrapper">
-        <LoadAnimation style />
-      </div>
+      <>
+        <LoadAnimation />
+      </>
     );
+  }
 
   return (
     <div className={style.container}>

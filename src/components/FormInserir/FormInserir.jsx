@@ -133,7 +133,15 @@ export default function FormInserir() {
           <div className={styles.button}>
             {!loading && <Button text="Adicionar" />}
             {loading && <Button disabled text="Adicionando..." />}
-            <Button text="Cancelar" />
+            <Button 
+            text="Cancelar" 
+            onClick={() =>
+              navigation(
+                `/saibamais/${props.id}`,
+                { replace: true }  
+              ) 
+            }
+            />
           </div>
         </div>
       </form>
