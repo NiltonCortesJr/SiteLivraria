@@ -4,41 +4,53 @@
 }
 .main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 30vh;
-    height: 40vh;
-    margin: 20px 0;
+    width: 15%;
+    height: 50vh;
+    margin: 32px auto;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);    
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: transform 350ms ease;
+
 }
 .cardImg {
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
 }
 .cardCampos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 5px;
+    justify-content: center; 
 }
+
+h3, p{
+    font-family: Arial;
+    text-align: center;
+    margin: 1.5% auto;
+}
+
 
 .spinner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    font-size: 20px;
+    height: 70px;
+    font-size: 25px;
     font-weight: 600;
     font-family: Arial;
     letter-spacing: 1em;
