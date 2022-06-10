@@ -1,6 +1,6 @@
 ._containerSelecao_1ypzk_1 {
-height: calc(100% - (85px + 195px + 128px));
-
+/* height: calc(100% - (85px + 195px + 128px)); */
+	height: 417px;
 }
 
 .bookshelf_wrapper {
