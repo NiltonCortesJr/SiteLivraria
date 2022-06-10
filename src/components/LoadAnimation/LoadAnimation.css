@@ -1,13 +1,8 @@
-._containerSelecao_1ypzk_1 {
-height: calc(100% - (85px+ 195px +128px));
-
-}
-
 .bookshelf_wrapper {
 	position: relative;
 	top: 60%;
 	left: 50%;
-	transform: translate(-50%, -50%);	
+	transform: translate(-50%, -50%);
 }
 
 .books_list {

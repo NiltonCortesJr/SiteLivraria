@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./FormInserir.module.css";
 import Button from "../Button/Button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function FormInserir() {
   const [id, setId] = useState();
@@ -33,7 +33,7 @@ export default function FormInserir() {
 
   return (
     <main className={styles.main}>
-      <form onSubmit={handleSubmit } className={styles.card}>
+      <form onSubmit={handleSubmit} className={styles.card}>
         {/* <img id={styles.image} src="" /> */}
         <div className={styles.cardCampos}>
           <h2>Insira um livro</h2>
@@ -133,7 +133,9 @@ export default function FormInserir() {
           <div className={styles.button}>
             {!loading && <Button text="Adicionar" />}
             {loading && <Button disabled text="Adicionando..." />}
-            <Button text="Cancelar" />
+            <Link to="/" >
+              <Button text="Cancelar" />
+            </Link>
           </div>
         </div>
       </form>

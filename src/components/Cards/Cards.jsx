@@ -11,7 +11,7 @@ export default function Cards() {
   } = useFetch("https://apilivraria.herokuapp.com/livros");
   if (loading)
     return (
-      <div className="animation-wrapper">
+      <div >
         <LoadAnimation style />
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FormEditar.module.css";
 import Button from "../Button/Button";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 
 export default function FormEditar() {
@@ -10,12 +10,12 @@ export default function FormEditar() {
   const { data, loading, error } = useFetch(
     `https://apilivraria.herokuapp.com/livros/${id}`
   );
-  useEffect(()=>{
-    fetch("https://apilivraria.herokuapp.com/livros/"+id)
-    .then((response) => response.json())
-    .then((json) =>setDadosI(json));
-  },[]);
-  
+  useEffect(() => {
+    fetch("https://apilivraria.herokuapp.com/livros/" + id)
+      .then((response) => response.json())
+      .then((json) => setDadosI(json));
+  }, []);
+
   const [url, setUrl] = useState("");
   const [nome, setNome] = useState("");
   const [autora, setAutora] = useState("");
@@ -23,12 +23,12 @@ export default function FormEditar() {
   const [valor, setValor] = useState("");
   const [descricao, setDescricao] = useState("");
   const [dadosI, setDadosI] = useState("");
-  
-    const handleSubmit = (e) => {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const data = { url, nome, autora, gênero, valor, descricao };
-    
+
     fetch("https://apilivraria.herokuapp.com/livros/" + id, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -106,20 +106,20 @@ export default function FormEditar() {
             />
           </div>
           <div className={styles.alteraDescricao}>
-          <div className={styles.alteraPreco}>
-            <label className={styles.label} for="preco">
-              Preço:{" "}
-            </label>
-            <input
-              className={styles.inputs}
-              type="text"
-              name="name"
-              required
-              placeholder={dadosI.valor}
-              value={valor}
-              onChange={(e) => setValor(e.target.value)}
-            />
-          </div>
+            <div className={styles.alteraPreco}>
+              <label className={styles.label} for="preco">
+                Preço:{" "}
+              </label>
+              <input
+                className={styles.inputs}
+                type="text"
+                name="name"
+                required
+                placeholder={dadosI.valor}
+                value={valor}
+                onChange={(e) => setValor(e.target.value)}
+              />
+            </div>
             <label className={styles.label} for="descricao">
               Descrição:{" "}
             </label>
@@ -137,7 +137,9 @@ export default function FormEditar() {
           <div className={styles.button}>
             {!loading && <Button text="Salvar" />}
             {loading && <Button disabled text="Salvando..." />}
-            <Button text="Cancelar" />
+            <Link to="/">
+              <Button text="Cancelar" />
+            </Link>
           </div>
         </div>
       </form>

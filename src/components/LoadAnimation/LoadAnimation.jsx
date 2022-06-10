@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Styles from "./LoadAnimation.css";
+import React from "react";
+import "./LoadAnimation.css";
 function LoadAnimation() {
-  useEffect(() => {
-    const altura = window.innerHeight - 240;
-    console.log(altura);
-    document.querySelector("._containerSelecao_1ypzk_1").style.height =
-      altura + "px";
-  }, []);
-
+ 
   return (
     <div class="bookshelf_wrapper">
       <ul class="books_list">
