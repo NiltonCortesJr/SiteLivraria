@@ -70,3 +70,18 @@ textarea{
     justify-content: space-around;
     margin-bottom: 1%;
 }
+
+@media (max-width:800px) {
+    .main {
+        height: 100%;
+    }
+    .card{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        padding: 2%;
+    }
+    .button{
+        flex-direction: column;
+    }
+}
