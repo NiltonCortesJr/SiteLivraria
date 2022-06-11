@@ -47,3 +47,19 @@
   font-style: italic;
   font-size: 12px;
 }
+.miniLogo {
+  display: none;
+}
+.logo {
+  display: block;
+}
+
+@media (max-width: 800px){
+  .logo {
+    display: none;
+  }
+  .miniLogo {
+    display: block;
+    width: 75%;
+  }
+}
