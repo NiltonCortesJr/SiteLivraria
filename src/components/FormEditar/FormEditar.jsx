@@ -91,7 +91,7 @@ export default function FormEditar() {
               onChange={(e) => setAutora(e.target.value)}
             />
           </div>
-          <div className={styles.alteraPreco}>
+          <div className={styles.alteraGenero}>
             <label className={styles.label} for="genero">
               Gênero:{" "}
             </label>
@@ -105,7 +105,6 @@ export default function FormEditar() {
               onChange={(e) => setGênero(e.target.value)}
             />
           </div>
-          <div className={styles.alteraDescricao}>
           <div className={styles.alteraPreco}>
             <label className={styles.label} for="preco">
               Preço:{" "}
@@ -120,6 +119,7 @@ export default function FormEditar() {
               onChange={(e) => setValor(e.target.value)}
             />
           </div>
+          <div className={styles.alteraDescricao}>
             <label className={styles.label} for="descricao">
               Descrição:{" "}
             </label>
