@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FormEditar.module.css";
 import Button from "../Button/Button";
-import { useParams, useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 
 export default function FormEditar() {
@@ -137,7 +137,7 @@ export default function FormEditar() {
           <div className={styles.button}>
             {!loading && <Button text="Salvar" />}
             {loading && <Button disabled text="Salvando..." />}
-            <Button text="Cancelar" />
+            <Link to="/"><Button text="Cancelar" /></Link>
           </div>
         </div>
       </form>
