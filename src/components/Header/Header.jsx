@@ -3,14 +3,12 @@ import style from "./Header.module.css";
 import Pesquisa from "../Pesquisa/Pesquisa";
 import NavBar from "../NavBar/NavBar";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { PesquisaContext } from "../../context/PesquisaContext";
 
 export default function Header() {
-  const [text,setText] = useState('')
-
-  useEffect(() => {
-    console.log(text)
-  }, [])
-
+  const {value, setValue} = useContext (PesquisaContext)
+  
   return (
     <div className={style.Header}>
       <Link to="/">
@@ -20,7 +18,7 @@ export default function Header() {
           className={style.logo}
         />
       </Link>
-      <Pesquisa value={text} onChange={(pesquisa) => setText(pesquisa)}/>
+      <Pesquisa value={value} onChange={(pesquisa) => setValue(pesquisa.target.value)}/>
       <NavBar />
     </div>
   );

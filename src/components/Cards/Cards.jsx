@@ -3,6 +3,9 @@ import CardModelo from "../CardModelo/CardModelo";
 import style from "./Cards.module.css";
 import { useFetch } from "../../hooks/useFetch";
 import LoadAnimation from "../LoadAnimation/LoadAnimation";
+import { useContext } from "react";
+import { PesquisaContext } from "../../context/PesquisaContext";
+
 export default function Cards() {
   const {
     loading,
@@ -16,10 +19,15 @@ export default function Cards() {
       </>
     );
   }
-
+  const {value} = useContext (PesquisaContext)
+  const livroFilter = livros.filter (text => {
+    return (text.titulo.toLowerCase().includes(value.toLowerCase()) || text.autor.toLowerCase().includes(value.toLowerCase()))
+  })
+  console.log (value)
+  console.log (livroFilter)
   return (
     <div className={style.container}>
-      {livros.map((livro) => (
+      {livroFilter.map((livro) => (
         <CardModelo
           key={livro.id}
           url={livro.url}
