@@ -67,3 +67,14 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width:800px) {
+    .card{
+        flex-direction: column;
+        width: 80%;
+        padding: 2%;
+    }
+    .button{
+        flex-direction: column;
+    }
+}

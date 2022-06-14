@@ -15,7 +15,7 @@ export default function Cards() {
   if (loading){
     return (
       <>
-        <LoadAnimation />
+        <LoadAnimation display={livros? "none" : "block"} heigth= {livros? "" : "417px"}/>
       </>
     );
   }

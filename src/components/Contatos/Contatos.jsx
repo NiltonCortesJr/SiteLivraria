@@ -22,20 +22,20 @@ export default function Contatos() {
           </a>
           <div className={style.cardCampos}>
             <h3>Izadora Ferreira</h3>
-            <h5>Dev Full Stack</h5>
+            <p>Desenvolvedora Full Stack</p>
           </div>
         </div>
 
         <div className={style.card}>
           <a href="https://www.linkedin.com/in/jos%C3%A9-camara-etchichury-filho-95190a125/">
             <img
-              src="https://media-exp2.licdn.com/dms/image/D4D35AQFhSOLoXzK-_w/profile-framedphoto-shrink_200_200/0/1645230228604?e=1655186400&v=beta&t=tw5XDrrQ1T0qQd15COBpj9y6LOzgRNLjAHFFxShrN_w"
+              src="https://user-images.githubusercontent.com/92602538/172968378-1045ee03-1e9d-4a75-a5c2-b03f187647dd.jpg"
               className={style.cardImg}
             />
           </a>
           <div className={style.cardCampos}>
             <h3>José Etchichury</h3>
-            <h5>Dev Full Stack</h5>
+            <p>Desenvolvedor Full Stack</p>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ export default function Contatos() {
           </a>
           <div className={style.cardCampos}>
             <h3>Vítor Del' Duca</h3>
-            <h5>Dev Full Stack</h5>
+            <p>Desenvolvedor Full Stack</p>
           </div>
         </div>
 
@@ -60,8 +60,8 @@ export default function Contatos() {
             />
           </a>
           <div className={style.cardCampos}>
-            <h3>Guilherme S.</h3>
-            <h5>Dev Full Stack</h5>
+            <h3>Guilherme Santiago</h3>
+            <p>Desenvolvedor Full Stack</p>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ export default function Contatos() {
           </a>
           <div className={style.cardCampos}>
             <h3>Nilton Jr</h3>
-            <h5>Dev Full Stack</h5>
+            <p>Desenvolvedor Full Stack</p>
           </div>
         </div>
       </main>

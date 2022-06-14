@@ -8,12 +8,13 @@ Projeto Final de Módulo 5 na Resilia Educação, cujo objetivo é implementar u
 - Contenha funcionalidades básicas do CRUD (create, read, update e delete).
 
 ## Status do projeto :white_check_mark:
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=Em-andamento&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=Concluído&color=GREEN&style=for-the-badge)
 
 ## Tecnologias utilizadas :computer:
 - ReactJS
 - JavaScript
-- Metodologia ágil Kanban (Trello)
+- HTML5
+- CSS3
 
 ## Dependências necessárias :page_with_curl:
  As dependências para a execução da aplicação estão listadas [aqui](https://github.com/NiltonCortesJr/SiteLivraria/blob/main/package.json)
@@ -43,15 +44,14 @@ As dependências necessárias para o ambiente de desenvolvimento da aplicação 
   }
 ```
 
-
 ## Inicialização da aplicação via terminal :arrow_forward:
-Para iniciar a aplicação, é necessário rodar no terminal o seguinte comando:
+Para iniciar a aplicação, é necessário rodar no terminal o comando:
 ```
-npm start
+npm run dev
 ```
 
 ## Deploy da aplicação
-Para visualização do deploy, insira o caminho seguido da entidade escolhida
+O site em funcionamento pode ser acessado [aqui](https://liberstore.netlify.app/)
 
 
 ## Autoria

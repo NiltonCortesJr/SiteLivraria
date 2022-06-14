@@ -37,3 +37,8 @@
 ::placeholder {
     color: rgb(106, 101, 101);
 }
+@media (max-width:800px) {
+    .Buscar, .Pesquisa, .PesquisaInput {
+        display: none;
+    }
+}

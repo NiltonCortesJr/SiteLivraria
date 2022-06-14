@@ -59,7 +59,7 @@ textarea{
     border: 0.5px rgb(0, 77,133) solid;
     font-family: Arial;
 }
-.alteraImagem, .alteraTitulo, .alteraAutora, .alteraPreco {
+.alteraImagem, .alteraTitulo, .alteraAutora, .alteraGenero, .alteraPreco {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -75,4 +75,24 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+@media (max-width:800px) {
+    .main {
+        height: 100%;
+    }
+    .card{
+        flex-direction: column;
+        width: 80%;
+        padding: 2%;
+    }
+    #image{
+        width: 55%;
+        margin-top: 3%;
+    }
+    .alteraDescricao{
+        margin-top: 10px;
+    }
+    .button{
+        flex-direction: column;
+    }
 }

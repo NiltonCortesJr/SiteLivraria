@@ -10,7 +10,8 @@ export default function Footer() {
         <div className={Styles.footerDisplay}>
           <div className={Styles.footerImage}>
             <Link to="/">
-              <img src={Logo_Livraria} />
+              <img src={Logo_Livraria} className={Styles.logo}/>
+              <img src="https://github.com/NiltonCortesJr/SiteLivraria/blob/main/src/assets/miniLogo/logoliber.png?raw=true" className={Styles.miniLogo}/>
             </Link>
           </div>
         </div>
